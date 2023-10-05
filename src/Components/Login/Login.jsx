@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'; // Import Link from React Router
 // import lottieImage from './../../public/animation_lnc0tps4.json'
 import lottieImage from './../../../public/animation_lnc0tps4.json'
 import Lottie from 'lottie-react';
+import { AiOutlineGoogle } from 'react-icons/ai';
 const Login = () => {
   const {
     register,
@@ -103,6 +104,12 @@ const Login = () => {
               >
                 Sign in
               </button>
+      <div className='flex items-center justify-center '>
+      <button className="text-center font-bold text-xl mt-2 text-indigo-600 hover:text-indigo-500">
+        <AiOutlineGoogle size={30} className="mr-2 inline" />
+         Google
+      </button>
+      </div>
             </div>
           </form>
           <div className="mt-4 text-center">
@@ -116,6 +123,7 @@ const Login = () => {
         </div>
 
         {/* "Don't have an account? Sign up" link */}
+       
        
       </div>
     </div>

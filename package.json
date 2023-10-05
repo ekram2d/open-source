@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.4",
     "@trendyol-js/react-carousel": "^3.0.2",
+    "graphql": "^16.8.1",
     "heroicons-react": "^1.4.1",
     "localforage": "^1.10.0",
     "lottie-react": "^2.4.0",

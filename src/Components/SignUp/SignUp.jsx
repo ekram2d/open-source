@@ -3,6 +3,7 @@ import { useForm, Controller } from 'react-hook-form';
 import { Link } from 'react-router-dom'; // Import Link from React Router
 import lottieImage from './../../../public/animation_lndajoa3.json'
 import Lottie from 'lottie-react';
+import { AiOutlineGoogle } from 'react-icons/ai';
 const SignUp = () => {
   const { control, handleSubmit, formState: { errors } } = useForm();
 
@@ -13,11 +14,11 @@ const SignUp = () => {
   return (
     <div className="min-h-screen md:flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
 
-<div className="text-center md:w-1/2 lg:text-left">
-                                    {/* <h1 className="text-5xl font-bold">Login now!</h1> */}
-                                    <Lottie animationData={lottieImage} loop={true} />
+      <div className="text-center md:w-1/2 lg:text-left">
+        {/* <h1 className="text-5xl font-bold">Login now!</h1> */}
+        <Lottie animationData={lottieImage} loop={true} />
 
-                              </div>
+      </div>
       <div className="max-w-md w-full bg-white shadow-md rounded-lg p-6">
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -45,9 +46,8 @@ const SignUp = () => {
                     id="username"
                     autoComplete="username"
                     required
-                    className={`appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm ${
-                      errors.username ? 'border-red-500' : ''
-                    }`}
+                    className={`appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm ${errors.username ? 'border-red-500' : ''
+                      }`}
                     placeholder="Username"
                   />
                 )}
@@ -78,9 +78,8 @@ const SignUp = () => {
                     id="email"
                     autoComplete="email"
                     required
-                    className={`appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 ${
-                      errors.email ? 'border-red-500' : ''
-                    } rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm`}
+                    className={`appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 ${errors.email ? 'border-red-500' : ''
+                      } rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm`}
                     placeholder="Email address"
                   />
                 )}
@@ -108,9 +107,8 @@ const SignUp = () => {
                     id="password"
                     autoComplete="new-password"
                     required
-                    className={`appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 ${
-                      errors.password ? 'border-red-500' : ''
-                    } focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm`}
+                    className={`appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 ${errors.password ? 'border-red-500' : ''
+                      } focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm`}
                     placeholder="Password"
                   />
                 )}
@@ -128,6 +126,12 @@ const SignUp = () => {
             >
               Sign Up
             </button>
+            <div className='flex items-center justify-center '>
+              <button className="text-center font-bold text-xl mt-2 text-indigo-600 hover:text-indigo-500">
+                <AiOutlineGoogle size={30} className="mr-2 inline" />
+                Google
+              </button>
+            </div>
           </div>
         </form>
 
@@ -139,6 +143,7 @@ const SignUp = () => {
               Login
             </Link>
           </p>
+
         </div>
       </div>
     </div>

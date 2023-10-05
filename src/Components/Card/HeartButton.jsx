@@ -14,7 +14,7 @@ const HeartButton = () => {
       <AiOutlineHeart
         size={28}
         className='
-        fill-rose-500  // Change fill color to red
+        fill-rose-500  
           absolute
           -top-[2px]
           -right-[2px]

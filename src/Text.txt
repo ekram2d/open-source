@@ -1,0 +1,17 @@
+query {
+capsules {
+  id
+  landings
+  missions{
+    flight
+    name
+  }
+  original_launch
+  reuse_count
+  status
+  type
+  
+  
+}
+}
+////
